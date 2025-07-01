@@ -47,7 +47,7 @@ if st.button("🔍 Analyze Password") and password:
         if isCommonPassword(password, commonPasswords):
             st.error("Very Common Password: found in wordlist; cracked instantly!")
         elif containsDictionaryWord(password, dictionaryWords):
-            st.warning("Contains a dictionary word; easily guessable with wordlists.")
+            st.warning("Contains a dictionary word; guessable with wordlists.")
         else:
             st.success("No obvious dictionary or common password patterns detected.")
 
